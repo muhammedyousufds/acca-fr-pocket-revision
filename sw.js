@@ -1,4 +1,4 @@
-const CACHE = "fr-pocket-v3";
+const CACHE = "fr-pocket-v4";
 const CACHE_PREFIX = "fr-pocket-";
 const ROOT = new URL(self.registration.scope);
 const FILES = ["", "index.html", "styles.css", "cards.js", "app.js", "manifest.webmanifest", "icon.svg"]
@@ -22,15 +22,14 @@ self.addEventListener("fetch", (event) => {
   if (requestUrl.origin !== ROOT.origin || !requestUrl.pathname.startsWith(ROOT.pathname)) return;
 
   event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request).then((response) => {
-      if (response.ok) {
-        const copy = response.clone();
-        caches.open(CACHE).then((cache) => cache.put(event.request, copy));
-      }
-      return response;
-    }).catch(() => caches.match(new URL("", ROOT).href))),
+    fetch(event.request).then((response) => {
+      if (!response.ok) return caches.match(event.request).then((cached) => cached || response);
+      const copy = response.clone();
+      return caches.open(CACHE).then((cache) => cache.put(event.request, copy)).then(() => response);
+    }).catch(() => caches.match(event.request).then((cached) => cached || caches.match(new URL("", ROOT).href))),
   );
 });
+
 
 
 
