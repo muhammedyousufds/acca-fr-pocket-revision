@@ -1,4 +1,4 @@
-const CACHE = "fr-pocket-v2";
+const CACHE = "fr-pocket-v3";
 const CACHE_PREFIX = "fr-pocket-";
 const ROOT = new URL(self.registration.scope);
 const FILES = ["", "index.html", "styles.css", "cards.js", "app.js", "manifest.webmanifest", "icon.svg"]
@@ -31,5 +31,6 @@ self.addEventListener("fetch", (event) => {
     }).catch(() => caches.match(new URL("", ROOT).href))),
   );
 });
+
 
 
