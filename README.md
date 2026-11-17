@@ -6,8 +6,9 @@ A mobile-first revision reader for ACCA Financial Reporting. The site is publish
 
 - Searchable revision cards organised by the 27-topic chapter map
 - Formulas, notes, common traps and examination tips
-- Flashcard recall, practice prompts, bookmarks and reading progress
-- Local-only reading data in the current browser; there is no account or server-side progress sync
+- Flashcard recall with a chapter picker, practice prompts, bookmarks and reading progress
+- Editable classroom coverage tracker with direct links from each chapter to its cards and practice
+- Reading, recall and classroom coverage are stored locally in the current browser; there is no account or server-side progress sync
 - Progressive web app with offline caching after the first successful visit
 - December 2026 exam format and examinable-document overview
 
