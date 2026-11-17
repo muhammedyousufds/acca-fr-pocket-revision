@@ -49,13 +49,13 @@ const cards = [
 ];
 
 const recall = [
-  {q:"Which retained earnings figure belongs in the goodwill calculation?",a:"The subsidiary's retained earnings at the acquisition date, together with acquisition-date fair value adjustments. Closing retained earnings are not used to measure goodwill at acquisition."},
-  {q:"The machinery fair value uplift is $80k and four years remain. What is the extra annual depreciation?",a:"$20k per year ($80k ÷ 4). Deduct the extra depreciation when finding the closing adjusted net assets and post-acquisition movement."},
-  {q:"Acquisition net assets are $680k and closing adjusted net assets are $780k. What is the post-acquisition movement?",a:"$100k ($780k − $680k). Compare adjusted net assets at the two dates; do not use the closing retained earnings figure on its own."},
-  {q:"Under the full-goodwill example, calculate closing NCI: $210k at acquisition, $25k share of post-acquisition movement, $8k share of impairment.",a:"$227k ($210k + $25k − $8k). Check the impairment allocation and arithmetic separately."},
-  {q:"How should you pace a 20-mark Section C requirement?",a:"Use about 36 minutes (1.8 minutes per mark). Read the requirement first, plan concise workings and leave time to address every part."},
-  {q:"What is adjusted when a group sells inventory internally and some remains unsold?",a:"Eliminate the intra-group sale and purchase, remove unrealised profit from closing inventory and profit of the selling entity, then allocate any upstream adjustment to NCI as required."},
-  {q:"How does the IAS 28 equity method update an associate investment?",a:"Start at cost, add the share of post-acquisition profit and OCI, deduct dividends received and impairment, and present the investment as one line in consolidated financial statements."}
+  {chapter:23,q:"Which retained earnings figure belongs in the goodwill calculation?",a:"The subsidiary's retained earnings at the acquisition date, together with acquisition-date fair value adjustments. Closing retained earnings are not used to measure goodwill at acquisition."},
+  {chapter:23,q:"The machinery fair value uplift is $80k and four years remain. What is the extra annual depreciation?",a:"$20k per year ($80k ÷ 4). Deduct the extra depreciation when finding the closing adjusted net assets and post-acquisition movement."},
+  {chapter:23,q:"Acquisition net assets are $680k and closing adjusted net assets are $780k. What is the post-acquisition movement?",a:"$100k ($780k − $680k). Compare adjusted net assets at the two dates; do not use the closing retained earnings figure on its own."},
+  {chapter:23,q:"Under the full-goodwill example, calculate closing NCI: $210k at acquisition, $25k share of post-acquisition movement, $8k share of impairment.",a:"$227k ($210k + $25k − $8k). Check the impairment allocation and arithmetic separately."},
+  {chapter:26,q:"How should you pace a 20-mark Section C requirement?",a:"Use about 36 minutes (1.8 minutes per mark). Read the requirement first, plan concise workings and leave time to address every part."},
+  {chapter:24,q:"What is adjusted when a group sells inventory internally and some remains unsold?",a:"Eliminate the intra-group sale and purchase, remove unrealised profit from closing inventory and profit of the selling entity, then allocate any upstream adjustment to NCI as required."},
+  {chapter:25,q:"How does the IAS 28 equity method update an associate investment?",a:"Start at cost, add the share of post-acquisition profit and OCI, deduct dividends received and impairment, and present the investment as one line in consolidated financial statements."}
 ];
 
 
