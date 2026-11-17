@@ -22,7 +22,7 @@ const chapters = [
   ["Conceptual principles of groups","Group accounting","Syllabus topic"],
   ["Consolidated statement of financial position","Group statement of financial position","Syllabus topic"],
   ["Goodwill and consolidation adjustments","IFRS 3 · acquisition and impairment","Syllabus topic"],
-  ["Consolidated statement of profit or loss","Next planned chapter","Current focus"],
+  ["Consolidated statement of profit or loss","Group profit or loss","Current focus"],
   ["Investments in associates","IAS 28 · equity method","Current focus"],
   ["Analysis and interpretation","Financial ratios and performance","Syllabus topic"],
   ["IAS 7 statement of cash flows","Cash flow statements","Planned"]
@@ -88,6 +88,7 @@ document.getElementById("install-button").addEventListener("click",async()=>{if(
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();window.installPrompt=e;document.getElementById("install-button").classList.add("ready")});
 if("serviceWorker"in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{scope:"./"}).catch(()=>{}));
 render();
+
 
 
 
