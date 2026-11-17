@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#183e37" />
+    <meta name="description" content="A calm, phone-first ACCA Financial Reporting revision space." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FR Pocket" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>ACCA FR Pocket Revision</title>
+  </head>
+  <body>
+    <div class="app-frame">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="FR Pocket home">
+          <span class="brand-mark">FR</span>
+          <span><strong>pocket</strong><small>ACCA STUDY SPACE</small></span>
+        </a>
+        <button class="icon-button" id="install-button" aria-label="Install on your phone" title="Add to Home Screen">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 15v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" /></svg>
+        </button>
+      </header>
+
+      <main id="app" aria-live="polite"></main>
+
+      <nav class="bottom-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span><span>Today</span></button>
+        <button class="nav-item" data-view="learn"><span class="nav-icon">▤</span><span>Read</span></button>
+        <button class="nav-item" data-view="chapters"><span class="nav-icon">◫</span><span>Chapters</span></button>
+        <button class="nav-item" data-view="practice"><span class="nav-icon">✳</span><span>Practice</span></button>
+        <button class="nav-item" data-view="progress"><span class="nav-icon">◷</span><span>Progress</span></button>
+      </nav>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./cards.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+
+
